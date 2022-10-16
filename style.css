@@ -1,4 +1,33 @@
-img {
+body {
+    background-color: rgb(194, 194, 194);
+}
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+    color: rgb(61, 139, 61);
+}
+
+h2,
+h3 {
+    font-family: 'Righteous', cursive;
+}
+
+.informacion-personal {
+    background-color: aquamarine;
+}
+
+#sonido {
+    text-decoration: red wavy underline;
+}
+
+.perfil {
     width: 200px;
     border-radius: 50%;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+
+.logo {
+    width: 50px;
 }

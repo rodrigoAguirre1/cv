@@ -2,69 +2,85 @@
 <html lang="es">
 
   <head>
+    <!-- Titulo que se ve en el casillero de la pág -->
     <title>Rodrigo Aguirre</title>
+    <!-- uso unas fuentes que te tira google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Righteous&display=swap" rel="stylesheet">
+    <!-- importo estilos de css -->
     <link href="style.css" rel="stylesheet">
   </head>
 
-
   <body>
+    <!-- Titulo principal -->
     <h1>Rodrigo Aguirre</h1>
-    <img src="DSC_4540-01.jpeg" alt="Foto de perfil" >
+    <main>
+      <!-- foto de perfil -->
+      <img src="DSC_4540-01.jpeg" alt="Foto de perfil" class="perfil">
 
-    <h2>Perfil</h2>
+      <h2>Perfil</h2>
 
-    <p>Estudiante avanzado de Ingeniería de Sonido en la Universidad de Tres de Febrero, con conocimientos en las ciencias de la grabación, electrónica orientada al audio y acústica arquitectónica. También me encuentro interesado en infraestructura en la nube y páginas web, soy solutions architec certificado por AWS. Actualmente estoy aprendiendo a desarrollar la parte de frontend de una página web (aprobame maxi xd), lo que incluye conocimientos de html, css y js.</p>
-    <p>Tengo 25 años, poseo carnet de conducir y disponibilidad para viajes papi (hago un esfuerzo).</p>
+      <p>Estudiante avanzado de Ingeniería de Sonido en la Universidad de Tres de Febrero, con conocimientos en las ciencias de la grabación, electrónica orientada al audio y acústica arquitectónica. También me encuentro interesado en infraestructura en la nube y páginas web, soy solutions architec certificado por AWS. Actualmente estoy aprendiendo a diseñar el frontend de una página web (<em>aprobame maxi xd</em>), lo que incluye conocimientos de html, css y js.</p>
+      <p>Tengo 25 años, poseo carnet de conducir y disponibilidad para viajes papi (hago un esfuerzo).</p>
 
-    <hr>
+      <!-- div es el contenedor de todo eso, le puedo dar estilos -->
+      <div class="informacion-personal">
+        <hr>
+        <h3>Información personal:</h3>
 
-    <h3>Información personal:</h3>
+        <p>Idiomas: Español nativo e Inglés intermedio.</p>
 
-    <p>Idiomas: Español nativo e Inglés intermedio.</p>
+        <p>Tel: +54 (2477) 360154.</p>
 
-    <p>Tel: +54 (2477) 360154.</p>
+        <p>Ubicación: 
+          <a href="https://www.google.com/maps/place/Buenos+Aires,+CABA/@-34.6156624,-58.5035098,12z/data=!3m1!4b1!4m5!3m4!1s0x95bcca3b4ef90cbd:0xa0b3812e88e88e87!8m2!3d-34.6036844!4d-58.3815591"           target="_blank" 
+          rel="noopener noreferrer">Buenos Aires, Argentina</a>.
+        </p>
+        
+        <p>Mail: aguirrerodrigo1@hotmail.com</p>
+        
+        <p>Linkedin: 
+          <a href="https://www.linkedin.com/in/rodrigo-aguirre-7ba413224/"
+          target="_blank" 
+          rel="noopener noreferrer">Rodrigo Aguirre</a>.
+        </p>
 
-    <p>Ubicación: 
-      <a href="https://www.google.com/maps/place/Buenos+Aires,+CABA/@-34.6156624,-58.5035098,12z/data=!3m1!4b1!4m5!3m4!1s0x95bcca3b4ef90cbd:0xa0b3812e88e88e87!8m2!3d-34.6036844!4d-58.3815591"           target="_blank" 
-      rel="noopener noreferrer">Buenos Aires, Argentina</a>.
-    </p>
-    
-    <p>Mail: aguirrerodrigo1@hotmail.com</p>
-    
-    <p>Linkedin: 
-      <a href="https://www.linkedin.com/in/rodrigo-aguirre-7ba413224/"
-      target="_blank" 
-      rel="noopener noreferrer">Rodrigo Aguirre</a>.
-    </p>
-
-    <p>Perfil Ing. de Sonido: 
-      <a href="https://aguirre38316.wixsite.com/rodrigo-aguirre"
-      target="_blank" 
-      rel="noopener noreferrer">Rodrigo Aguirre</a>.
-    </p>
-
-    <hr>
-
-    <h2>Formación</h2>
-    <ul>
-      <li>2022: Solutions architect orientado en los servicios de AWS.</li>
-      <li>2015-2022: Ingeniería de Sonido en la Universidad de Tres de Febrero.</li>
-    </ul>
-
-    <hr>
-
-    <h2>Certifica2</h2>
-
-    <p>2022: AWS Certified Solutions Architect.</p>
-
-
+        <p>Perfil Ing. de Sonido: 
+          <a href="https://aguirre38316.wixsite.com/rodrigo-aguirre"
+          target="_blank" 
+          rel="noopener noreferrer"
+          id="sonido">Rodrigo Aguirre</a>.
+        </p>
+        <hr>
+      </div>
       
+      <h2>Formación</h2>
+      <ul>
+        <li>2022: Solutions architect orientado en los servicios de AWS.</li>
+        <li>2015-2022: Ingeniería de Sonido en la Universidad de Tres de Febrero.</li>
+      </ul>
+
+      <hr>
+
+      <h2>Certifica2</h2>
+
+      <p>2022: <strong>AWS</strong> Certified Solutions Architect. <img src="aws.png" alt="Logo del certificado de AWS" class="logo"></p>
+
+      <hr>
+
+      <!-- algo de js pa hueviar -->
+      <script>
+        console.log("Que haces acá, andá disfrutá de ese contenido estático pe"); //comentario en js
+      </script>
+
+    </main>
+
+    <!-- pie de pagina -->
+    <footer>
+      <p><small>Sin derechos de autor pe - <a href="https://www.instagram.com/rodri.viru/" target="_blank" rel="noopener noreferrer">IG: Rodri Aguirre</a></small></p>
+    </footer>
+
   </body>
-
-
-  <footer>
-    <p><small>Sin derechos de autor pe - <a href="https://www.instagram.com/rodri.viru/" target="_blank" rel="noopener noreferrer">IG: Rodri Aguirre</a></small></p>
-  </footer>
-
 
 </html>
