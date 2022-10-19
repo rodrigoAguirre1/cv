@@ -20,9 +20,7 @@ body {
     text-align: justify;
 }
 
-#aws {
-    width: 100px;
-}
+
 
 h1 {
     font-size: 50px;
@@ -40,8 +38,16 @@ h2 {
 
 #barra {
     font-family: 'Roboto', sans-serif;
+    font-size: 24px;
 }
 
 #nombre-principal {
     font-size: 80px;
 }
+
+#solutions,
+#sonido {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
