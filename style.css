@@ -1,33 +1,47 @@
 body {
-    background-color: rgb(194, 194, 194);
+    background-color: rgb(218, 218, 218);
+    font-size: x-large;
+}
+
+#centrar,
+#centrar2 {
+    align-self: center;
+}
+
+#perfil {
+    width: 300px;
+    border-radius: 50%;
+    border: 4px solid black;
+    display: block;
+    margin: 0px auto;
+}
+
+.justificar {
+    text-align: justify;
+}
+
+#aws {
+    width: 100px;
 }
 
 h1 {
-    font-family: 'Fredoka One', cursive;
-    color: rgb(61, 139, 61);
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
 }
 
-h2,
-h3 {
-    font-family: 'Righteous', cursive;
+h2 {
+    text-align: center;
 }
 
-.informacion-personal {
-    background-color: aquamarine;
+#copy {
+    font-family: 'Patrick Hand', cursive;
 }
 
-#sonido {
-    text-decoration: red wavy underline;
+#barra {
+    font-family: 'Roboto', sans-serif;
 }
 
-.perfil {
-    width: 200px;
-    border-radius: 50%;
-    border-width: 5px;
-    border-color: black;
-    border-style: solid;
-}
-
-.logo {
-    width: 50px;
+#nombre-principal {
+    font-size: 80px;
 }
