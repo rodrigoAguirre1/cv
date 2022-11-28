@@ -2,7 +2,6 @@ resource "aws_cloudfront_origin_access_identity" "my_origin_access_identity" {
   comment = "Identify the cloudfront and also allow connection between the cloudfront and the S3 bucket"
 }
 
-
 resource "aws_cloudfront_distribution" "s3_distribution" {
   origin {
     domain_name = aws_s3_bucket.cv-bucket.bucket_regional_domain_name

@@ -34,22 +34,6 @@ resource "aws_acm_certificate_validation" "certvalidation" {
   validation_record_fqdns = [for record in aws_route53_record.certvalidation : record.fqdn]
 }
 
-/*
-resource "aws_route53_record" "certvalidation" {
-  allow_overwrite = true
-  name            = tolist(aws_acm_certificate.cert.domain_validation_options)[0].resource_record_name
-  records         = [tolist(aws_acm_certificate.cert.domain_validation_options)[0].resource_record_value]
-  type            = tolist(aws_acm_certificate.cert.domain_validation_options)[0].resource_record_type
-  zone_id         = data.aws_route53_zone.main.zone_id
-  ttl             = 60
-}
-
-resource "aws_acm_certificate_validation" "certvalidation" {
-  certificate_arn         = aws_acm_certificate.cert.arn
-  validation_record_fqdns = [aws_route53_record.certvalidation.fqdn]
-}
-*/
-
 resource "aws_route53_record" "domain" {
   name    = "rodrigoaguirre.com"
   zone_id = data.aws_route53_zone.main.zone_id
