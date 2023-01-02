@@ -113,6 +113,12 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     max_ttl                = 86400
   }
 
+  custom_error_response {
+    error_code = 403
+    response_code = 200
+    response_page_path = "/index.html"
+  }
+
   tags = {
     Name = "The Cloudfront distribution for my static web bucket"
   }
