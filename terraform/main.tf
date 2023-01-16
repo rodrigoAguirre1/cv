@@ -48,12 +48,12 @@ data "aws_iam_policy_document" "s3_policy" {
 
 #Export static web files to the bucket.
 resource "aws_s3_object" "cv_bucket" {
-  for_each = fileset("${path.module}/../static-web/", "**")
+  for_each = fileset("${path.module}/../static-web/build", "**")
 
   bucket       = aws_s3_bucket.cv_bucket.id
   key          = each.value
-  source       = "${path.module}/../static-web/${each.value}"
-  etag         = filemd5("${path.module}/../static-web/${each.value}")
+  source       = "${path.module}/../static-web/build/${each.value}"
+  etag         = filemd5("${path.module}/../static-web/build/${each.value}")
   content_type = lookup(local.mime_types, regex("\\.[^.]+$", each.value), null)
 }
 
