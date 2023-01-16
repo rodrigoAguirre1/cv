@@ -7,4 +7,3 @@ In the "Terraform" folder is how infrastructure as code the S3 bucket where I up
 In the "static-web" folder you will find the frontend design made with React, JavaScript, HTML and CSS.
 
 The page is located at: www.rodrigoaguirre.com
-
