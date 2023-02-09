@@ -1,8 +1,12 @@
 name: Build and Deploy to S3 bucket
 
 on:
-  pull_request:
-    types: [ closed ]
+  push:
+
+  # # This code is for a development environment
+  # pull_request:
+  #   branches: [ master ]
+  #   types: [ closed ]
 
 permissions:
   id-token: write
@@ -10,7 +14,10 @@ permissions:
 
 jobs:
   deploy:
-    if: github.event.pull_request.merged == true
+
+    # # This code is for a development environment
+    # if: github.event.pull_request.merged == true
+    
     runs-on: ubuntu-latest
 
     defaults:
