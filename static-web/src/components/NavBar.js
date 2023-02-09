@@ -18,7 +18,7 @@ export function NavBar() {
         <Col sm={9} md={9} lg={9} xl={9}>
           <Navbar bg='dark' fixed='top' className='navbar'>
             <Container fluid>
-              <p className='nombre-navbar'>Rodrigo Aguirre </p>
+              <p className='nombre-navbar'>Rodrigo Aguirre</p>
               <Stack direction='horizontal' gap={2}>
                 <div className='vr bg-light' />
                 <div>
