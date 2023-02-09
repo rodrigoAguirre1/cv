@@ -24,7 +24,7 @@ export function ColLeft() {
           <ProgressBar variant='secondary' now={60} />
         </ListGroup.Item>
         <ListGroup.Item style={{ border: '1px solid grey' }}>
-          <p className='text-break personal-information'>GitHub</p>
+          <p className='text-break personal-information'>GitHub </p>
           <ProgressBar variant='secondary' now={60} />
         </ListGroup.Item>
         <ListGroup.Item style={{ border: '1px solid grey' }}>
