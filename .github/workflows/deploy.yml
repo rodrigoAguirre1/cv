@@ -3,7 +3,7 @@ name: Build and Deploy to S3 bucket
 on:
   push:
     paths:
-      - static-web/src
+      - 'static-web/*'
   # # This code is for a development environment
   # pull_request:
   #   branches: [ master ]
