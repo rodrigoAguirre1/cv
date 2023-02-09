@@ -29,7 +29,7 @@ export function ColLeft() {
         </ListGroup.Item>
         <ListGroup.Item style={{ border: '1px solid grey' }}>
           <p className='text-break personal-information'>Docker</p>
-          <ProgressBar variant='secondary' now={60} />
+          <ProgressBar variant='secondary' now={70} />
         </ListGroup.Item>
       </ListGroup>
       <hr style={{ color: '#fff' }} />
