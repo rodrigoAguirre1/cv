@@ -20,8 +20,8 @@ export const languages = {
     es: 'De manera complementaria, aprendí acerca de frontend, comenzando con lenguajes básicos como html, css y javascript para finalmente fusionarlos con la librería React, incorporando conceptos como estado, routing y hooks, logrando así el diseño de interfaces de usuario interactivas.'
   },
   p3: {
-    en: 'I learned to work with GitHub and thus take advantage of Git as a version control system. I also used Docker to work with containers.',
-    es: 'Aprendí a trabajar con GitHub y así aprovechar la ventaja de Git como sistema de control de versiones. También utilicé Docker para trabajar con contenedores.'
+    en: 'On the other hand, I learned about DevOps: I used GitHub Actions to implement pipelines that automate processes, I used Docker Compose to work with images and containers, and AWS ECS as a container orchestrator in the cloud. I learned to work with GitHub and thus take advantage of Git as a version control system.',
+    es: 'Por otro lado, aprendi acerca de DevOps: utilicé GitHub Actions para implementar pipelines que automatizan procesos, usé Docker Compose para trabajar con imagenes y contenedores, y AWS ECS como orquestador de contenedores en la nube. Aprendí a trabajar con GitHub y así aprovechar la ventaja de Git como sistema de control de versiones. También utilicé Docker para trabajar con contenedores.'
   },
   p4: {
     en: 'I am focused on continuing to improve my skills as a software engineer by working in a company that challenges me on a daily basis and allows me to continue growing as a professional.',
@@ -106,5 +106,45 @@ export const languages = {
   fishing: {
     en: 'Sport fishing',
     es: 'Pesca deportiva'
+  },
+  projects: {
+    en: 'Personal projects',
+    es: 'Proyectos personales'
+  },
+  date1: {
+    en: 'jan. 2023 - feb. 2023',
+    es: 'ene. 2023 - feb. 2023'
+  },
+  projectinfo1: {
+    en: 'This is a project I did for a technical test related to DevOps.',
+    es: 'Se trata de un proyecto que hice para una prueba técnica referida a DevOps.'
+  },
+  projectdescription1: {
+    en: 'It consists of 3 points where I first made a network diagram of a web page with a frontend in JS and a backend with a relational and a non-relational database, using AWS services. Then I deployed a Django and React application with Dockerfiles, docker compose, nginx, gunicorn, uvicorn, AWS ECR, AWS ECS, both for a development and production environment, on a local pc and in the cloud. Finally, a CI/CD exercise where an image is automatically built in AWS ECR and updated on the platform chosen to host the page (AWS ECS), use GitHub Actions as a CI/CD tool.',
+    es: 'Consiste en 3 puntos donde primero realicé un diagrama de red de una página web con frontend en JS y backend con una base de datos relacional y una no relacional, usando servicios de AWS. Luego realicé el deploy de una aplicación Django y React con Dockerfiles, docker compose, nginx, gunicorn, uvicorn, AWS ECR, AWS ECS, tanto para un entorno de desarrollo como de producción, en una pc local y en la nube. Por último, un ejercicio de CI/CD donde se buildea una imagen automáticamente en AWS ECR y se actualiza en la plataforma elegida para hostear la página (AWS ECS), use GitHub Actions cómo herramienta de CI/CD.'
+  },
+  date2: {
+    en: 'jan. 2023',
+    es: 'ene. 2023'
+  },
+  projectinfo2: {
+    en: 'This is a Rick and Morty page where I made requests to the Rick and Morty API with axios and handled errors.',
+    es: 'Se trata de una página de Rick and Morty donde hice requests a la API de Rick and Morty con axios y manejé errores.'
+  },
+  projectdescription2: {
+    en: 'In this project I use AWS services to host the web page (S3, CloudFront, Route53, ACM) using Terraform as IaC, the frontend part was done with React (axios, useEffect, useState, JS, HTML, CSS, Bootstrap, Ant design) and the CI/CD part with GitHub Actions, implementing a pipeline to build the changes made to the page, upload them to the S3 bucket where the frontend files are located, and invalidate the CloudFront cache.',
+    es: 'En este proyecto utilice los servicios de AWS para hostear la página web (S3, CloudFront, Route53, ACM) usando Terraform como IaC, la parte de frontend la hice con React (axios, useEffect, useState, JS, HTML, CSS, Bootstrap, Ant design) y la parte de CI/CD con GitHub Actions, implementando una pipeline para buildear los cambios realizados en la página, subirlos al bucket S3 donde se encuentran los archivos del frontend e invalidar el cache de CloudFront.'
+  },
+  date3: {
+    en: 'nov. 2022 - dec. 2022',
+    es: 'nov. 2022 - dic. 2022'
+  },
+  projectinfo3: {
+    en: 'It is a Curriculum Vitae type page with a beginning referring to the professional part and an about me with personal content of free time.',
+    es: 'Se trata de una página tipo Curriculum Vitae con un inicio referido a la parte profesional y un about me con contenido personal de tiempo libre.'
+  },
+  projectdescription3: {
+    en: 'In this project I use AWS services to host the web page (S3, CloudFront, Route53, ACM) using Terraform as IaC, and the frontend part was done with React (useContext, useEffect, useState, JS, HTML, CSS, Bootstrap ).',
+    es: 'En este proyecto utilice los servicios de AWS para hostear la página web (S3, CloudFront, Route53, ACM) usando Terraform como IaC, y la parte de frontend la hice con React (useContext, useEffect, useState, JS, HTML, CSS, Bootstrap).'
   },
 }

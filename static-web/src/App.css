@@ -140,12 +140,12 @@ h2 {
 }
 
 .navbar {
-  height: 109px;
+  height: 130px;
 }
 
 @media screen and (max-width: 541px) {
   .first-container {
-    padding-top: 130px;
+    padding-top: 160px;
   }
 
   .perfil {
@@ -182,7 +182,7 @@ h2 {
   }
 
   .navbar {
-    height: 129px;
+    height: 160px;
   }
 }
 
@@ -192,7 +192,7 @@ h2 {
   }
 
   .first-container {
-    padding-top: 146px;
+    padding-top: 180px;
   }
 
   .nombre-navbar {
@@ -216,13 +216,13 @@ h2 {
   }
 
   .navbar {
-    height: 145px;
+    height: 180px;
   }
 }
 
 @media screen and (min-width:768px) and (max-width: 991px) {
   .first-container {
-    padding-top: 110px;
+    padding-top: 130px;
   }
 
   .nombre-navbar {
@@ -240,7 +240,7 @@ h2 {
 
 @media screen and (min-width: 992px) {
   .first-container {
-    padding-top: 109px;
+    padding-top: 130px;
   }
 
   .nombre-navbar {

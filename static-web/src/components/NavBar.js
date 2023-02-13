@@ -1,8 +1,9 @@
 import React from 'react';
-import { Container, Navbar, Stack, ListGroup, Row, Col } from 'react-bootstrap';
+import { Container, Navbar, Stack, ListGroup, Row, Col} from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { LanguageButton } from './LanguageButton';
 import profileImage from '../cv-static/perfil1.JPG';
+import GenericPdfDownloader from './GenericPdfDownloader';
 
 export function NavBar() {
   return (
@@ -39,6 +40,12 @@ export function NavBar() {
                     </ListGroup.Item>
                     <ListGroup.Item id='list'>
                       <LanguageButton />
+
+                      <GenericPdfDownloader
+                        downloadFileName='CV Rodrigo Aguirre'
+                        rootElementId="HomePDF"
+                      />
+
                     </ListGroup.Item>
                   </ListGroup>
                 </div>

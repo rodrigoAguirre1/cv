@@ -3,6 +3,9 @@ import { BsWhatsapp, BsGeoAlt, BsFillEnvelopeFill } from 'react-icons/bs';
 import { ProgressBar, Stack, Button, ButtonGroup, ListGroup } from 'react-bootstrap';
 import { useLanguage } from '../context/Context';
 import { languages } from '../context/Config';
+import aws from '../cv-static/aws-certified-solutions-architect-associate.png';
+import terra from '../cv-static/hashicorp-certified-terraform-associate-002.png';
+import { Formation } from './Formation';
 
 export function ColLeft() {
   const { language } = useLanguage()
@@ -43,6 +46,24 @@ export function ColLeft() {
           <p className='text-break personal-information'>{languages.english[language]}</p>
           <ProgressBar variant='secondary' now={50} />
         </ListGroup.Item>
+      </ListGroup>
+      <hr style={{ color: '#fff' }} />
+      <h2>{languages.certificates[language]}</h2>
+      <ListGroup variant='flush' style={{ marginBottom: '10px' }}>
+        <Formation
+          company='AWS: Solutions Architect'
+          year='2022'
+          description={languages.description1[language]}
+          logo={aws}
+          url='https://www.credly.com/badges/9619f83a-59bd-44ea-8ab0-8cf1aab18e61/public_url'
+        />
+        <Formation
+          company='Hashicorp: Terraform Associate'
+          year='2022'
+          description={languages.description2[language]}
+          logo={terra}
+          url='https://www.credly.com/badges/14d55f9e-0fad-4169-b491-3cb38d3ffdff/public_url'
+        />
       </ListGroup>
       <hr style={{ color: '#fff' }} />
       <h2>{languages.information[language]}</h2>

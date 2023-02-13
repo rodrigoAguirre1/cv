@@ -2,9 +2,9 @@ import React from 'react';
 import { useLanguage } from '../context/Context';
 import { languages } from '../context/Config';
 import { Formation } from './Formation';
+import { PersonalProjects } from './PersonalProjects';
 import { ListGroup } from 'react-bootstrap';
-import aws from '../cv-static/aws-certified-solutions-architect-associate.png';
-import terra from '../cv-static/hashicorp-certified-terraform-associate-002.png';
+
 import untref from '../cv-static/Untref_logo.png';
 
 export function ColRight() {
@@ -27,24 +27,31 @@ export function ColRight() {
         </a>
       </p>
       <hr style={{ color: '#000' }} />
-      <h1>{languages.certificates[language]}</h1>
+      <h1>{languages.projects[language]}</h1>
       <ListGroup variant='flush' style={{ marginBottom: '10px' }}>
-        <Formation
-          company='AWS: Solutions Architect'
-          year='2022'
-          description={languages.description1[language]}
-          logo={aws}
-          url='https://www.credly.com/badges/9619f83a-59bd-44ea-8ab0-8cf1aab18e61/public_url'
+        <PersonalProjects
+          projectname='DevOps Challenge: AWS, Docker, CI/CD'
+          projectdate={languages.date1[language]}
+          projectinfo={languages.projectinfo1[language]}
+          projectdescription={languages.projectdescription1[language]}
+          url='https://github.com/rodrigoAguirre1/devops-challenge'
         />
-        <Formation
-          company='Hashicorp: Terraform Associate'
-          year='2022'
-          description={languages.description2[language]}
-          logo={terra}
-          url='https://www.credly.com/badges/14d55f9e-0fad-4169-b491-3cb38d3ffdff/public_url'
+        <PersonalProjects
+          projectname='Rick and Morty Web'
+          projectdate={languages.date2[language]}
+          projectinfo={languages.projectinfo2[language]}
+          projectdescription={languages.projectdescription2[language]}
+          url='https://github.com/rodrigoAguirre1/rick-and-morty-chars'
         />
+        <PersonalProjects
+          projectname='CV website'
+          projectdate={languages.date3[language]}
+          projectinfo={languages.projectinfo3[language]}
+          projectdescription={languages.projectdescription3[language]}
+          url='https://github.com/rodrigoAguirre1/cv'
+        />  
       </ListGroup>
-      <hr style={{ color: 'rgb(130,130,130)' }} />
+      <hr style={{ color: '#000' }} />
       <h1>{languages.formation[language]}</h1>
       <ListGroup variant='flush' style={{ marginBottom: '10px' }}>
         <Formation
